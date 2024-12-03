@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surpresa!</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="envelope" onclick="abrirEnvelope()">
+      <img src="envelope.png" alt="Envelope">
+    </div>
+    <div class="mensagem" style="display: none;">
+      <h1>Meu Amor,</h1>
+      <p>Escrever essa mensagem para você é uma forma de expressar o que meu coração sente. Cada palavra é um reflexo do amor profundo e verdadeiro que nutro por você. Lembro-me do nosso primeiro beijo, como se fosse ontem.... você linda, toda de azul, e eu todo tímido.... não sabia nem por onde começar a falar tudo que já sentia por você. Mas sabe? mesmo com a timidez, Deus sabe quando, onde e como colocar as pessoas em nossas vidas.... e pois é, amor.... eu amo a forma que Deus me deu você, e amo a forma como você me faz bem todos os dias</p>
+
+      <div class="imagem-grupo">
+          <img src="foto1.jpg" alt="Foto 1">
+          <img src="foto2.jpg" alt="Foto 2">
+      </div>
+
+      <p>Você é a pessoa mais incrível que eu conheço, sua risada contagia qualquer um, e sua força me inspira. Estar ao seu lado é a melhor coisa do mundo. Obrigado por todos os momentos inesquecíveis que compartilhamos e principalmente obrigado por ser você.</p>
+
+      <p>Te amo mais que tudo!</p>
+
+      <p>Com amor eterno,</p>
+      <p>Felipe</p>
+      <p style="color:red;">04/02/2023</p>
+      <p id="countdown" style="color:red;"></p>
+    </div>
+  </div>
+
+  <audio id="musica" src="lana.mp3" loop preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

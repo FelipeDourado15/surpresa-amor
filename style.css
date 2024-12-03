@@ -1,0 +1,75 @@
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: sans-serif;
+  color: white;
+  position: relative;
+  overflow-y: scroll;
+}
+
+.container {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+}
+
+.envelope {
+  width: 300px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+.envelope img {
+  width: 100%;
+  height: auto;
+}
+
+.mensagem {
+  text-align: center;
+  font-size: 1.8em;
+  color: white;
+  display: none;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  width: 80%;
+  max-width: 700px;
+  margin: 50px auto 0;
+}
+
+.imagem-grupo {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.imagem-grupo img {
+  max-width: 150px;
+  height: auto;
+  margin: 0 10px;
+  border: 5px solid #ddd;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.heart {
+  position: absolute;
+  top: -50px;
+  color: red;
+  font-size: 30px;
+  animation: fall 5s infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
